@@ -5,8 +5,8 @@ const settings = {
       type: "httpTrigger",
       direction: "in",
       name: "req",
-      route: "hello1",
-      methods: ["get"],
+      route: "blog-post",
+      methods: ["delete"],
     },
     {
       type: "http",
@@ -16,8 +16,8 @@ const settings = {
   ],
 };
 
-const name = "example_get";
+const name = "blog-post_delete";
 
-const run = async (context, req) => ({ body: "hello world" });
+const run = async (context, req) => ({ status: 204 });
 
 module.exports = { settings, name, run };

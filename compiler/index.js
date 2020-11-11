@@ -80,4 +80,4 @@ const compile = async (globExpr) => {
   });
 };
 
-compile("dist/**/*.az.js");
+compile("src/**/*.az.js");
